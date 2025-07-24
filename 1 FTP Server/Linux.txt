@@ -1,0 +1,29 @@
+1. update ubuntu 
+
+>> sudo apt update 
+
+2. upgrade 
+
+>> sudo apt upgrade -y
+
+3. check specification 
+
+>> nvidia-smi
+
+4. change apt install ui 
+
+>> sudo apt install cmus
+>> sudo apt install nala
+>> sudo nala install neofetch htop
+
+5. uninstall programing 
+- Checks the name of software
+
+>> dpkg --list 
+
+or we can filter it out 
+
+>> dpkg -l | grep apache 
+
+- Remove command 
+> sudo apt-get remove firefox
