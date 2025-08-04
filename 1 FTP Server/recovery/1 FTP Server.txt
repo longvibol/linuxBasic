@@ -9,6 +9,8 @@ LINK:  https://www.youtube.com/watch?v=SFWR4Krmkw4
 
 >> systemctl status vsftpd.service: 
 
+
+---------------------------------------------
 vsftpd.service - vsftpd FTP server
      Loaded: loaded (/usr/lib/systemd/system/vsftpd.service; enabled; preset: e>
      Active: active (running) since Thu 2025-07-24 11:05:01 +07; 1min 12s ago
@@ -20,7 +22,7 @@ vsftpd.service - vsftpd FTP server
      CGroup: /system.slice/vsftpd.service
              └─4167 /usr/sbin/vsftpd /etc/vsftpd.conf
 
---> we check on : Active: active (running)
+--> We check on : Active: active (running)
 
 ===================================================
 
@@ -40,7 +42,8 @@ Result we can not log in => so we can edit in the vsftpd.conf file
 >> sudo nano /etc/vsftpd.conf
 
 
-What we edit : 
+What we edit: 
+
 - listen=YES
 - listen_ipv6=NO
 - anonymous_enable=YES
