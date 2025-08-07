@@ -1,0 +1,41 @@
+Start-Service sshd
+Set-Service -Name sshd -StartupType 'Automatic'
+
+--------------------------------
+
+New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH Server (sshd)' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
+
+-----------------------------------
+
+
+How to connect from other computer: 
+
+ssh your_windows_username@windows_ip_address
+
+Example from Ubutu 
+
+>> ssh home@10.172.8.168
+
+Note command find user input
+ 
+>>whoami
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
