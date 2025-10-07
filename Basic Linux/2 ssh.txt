@@ -1,0 +1,8 @@
+1-check status 
+
+>> sudo systemctl status ssh
+
+
+2- edit ssh 
+
+>> sudo vi /etc/ssh/sshd_config
