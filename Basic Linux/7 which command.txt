@@ -1,0 +1,8 @@
+>> which clear 
+
+vibol@khcam:~$ which clear
+/usr/bin/clear
+
+
+it tell the where is the location 
+

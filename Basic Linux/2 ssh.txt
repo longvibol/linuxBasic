@@ -6,3 +6,81 @@
 2- edit ssh 
 
 >> sudo vi /etc/ssh/sshd_config
+
+3- Check manual 
+
+>> main ncal 
+
+4- control page in the manual 
+
+- select then + "space" = one page 
+
+- Then space to the next page
+
+- "b" to previous page 
+
+- "f" forward page 
+
++ click on "h" to see all the short cut in review page 
+
+if we want to search for -w 
+
+type "/-w + enter :
+
+>> ncal -w 
+
+    October 2025      
+Su     5 12 19 26   
+Mo     6 13 20 27   
+Tu     7 14 21 28   
+We  1  8 15 22 29   
+Th  2  9 16 23 30   
+Fr  3 10 17 24 31   
+Sa  4 11 18 25      
+   40 41 42 43 44   
+
+---------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
++ bin : it contain the execute program 
+
+Ex: cd, pwd, ls , man ….
+
++ etc : contain configuration file 
+
+crontab ; nano 
+
++ media : connection to outside list usb drive ; sd card ; dvd ; cd room 
+
++ var: contain login 
+
+vibol@khcam:/var$ ls
+backups  crash  local  log   metrics  run   spool  www
+cache    lib    lock   mail  opt      snap  tmp
+
+
++ usr : libary, program ; new command , new software
+
+ 
+>> vibol@khcam:/usr$ ls
+bin    i686-w64-mingw32  lib    libexec  sbin   src
+games  include           lib64  local    share  x86_64-w64-mingw32
+vibol@khcam:/usr$ cd games/
+vibol@khcam:/usr/games$ ls
+gamemodelist  gamemoderun  gamemode-simulate-game
+
+
++ man ls 
+
+/ comman to search 
+
+>> to file the list with the command 
+
+>> ls -m
+
+Desktop, Documents, Downloads, eclipse-workspace, Music, Pictures, Public, PycharmProjects, sambashare,
+snap, Templates, Videos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
