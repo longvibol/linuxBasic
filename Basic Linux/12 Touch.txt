@@ -1,0 +1,27 @@
+To create file in the Linux:
+
+>> touch hello.txt 
+
+
+Create multiple file: 
+
+>>touch vibol.txt hello.txt test.txt
+
+
+--------------------------
+
+How to name the file 
+
+- create without space 
+
+- use \ to make it space when fine the file 
+
+>> touch "my home".txt
+
+We create file name "my home.txt" 
+
+when we want to find the file :
+
+>> file my\ home.txt 
+==> my home.txt: empty
+

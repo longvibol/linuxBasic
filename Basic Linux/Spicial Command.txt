@@ -1,0 +1,75 @@
++ open file : 
+
+>> xdg-open + "file name" or "folder" 
+
+
++ Remove all the file and folder 
+
+>> rm -rf *
+
+- rm: remove files or directories
+- -r: recursive — removes directories and their contents
+- -f: force — ignores nonexistent files and suppresses prompts
+- *: wildcard — matches all files and folders in the current director
+
++ To see the structure folder :
+
+>> ls -R 
+.:
+package.json  public  README.md  src
+
+./public:
+index.html
+
+./src:
+App.css  App.js  components  index.css,  index.js
+
+./src/components:
+Navbar
+
+./src/components/Navbar:
+
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

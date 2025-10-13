@@ -1,0 +1,68 @@
+How to create folder:
+
+- make folder from relative 
+
+>> mkdir Desktop/Dogs/vibollong.txt
+
+-------------------------------------------
+
+** make netest folder **
+
+>> mkdir ~/Desktop/Dogs/test/love -p
+
+
+we use -p :
+
+-p, --parents
+              no error if existing, make parent directories as needed, with their file modes unaffected by any -m
+              option.
+
+
+----------------------------------------------------------
+
+In case it have the folder parent it will not create it:
+
+>>  mkdir -p home/myfolder
+
+
+----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
