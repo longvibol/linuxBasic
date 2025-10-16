@@ -1,0 +1,62 @@
+syntax 
+
+>> mv <source> <destination>
+
++ move relate path 
+
+>> mv Dogs/buby ~
+
+~ = home directory 
+
+SYNOPSIS
+       mv [OPTION]... [-T] SOURCE DEST
+       mv [OPTION]... SOURCE... DIRECTORY
+       mv [OPTION]... -t DIRECTORY SOURCE...
+
+
+Move multi file 
+
+>> vibol@khcam:~$ mv index.js App.js package.json  index.css Desktop/Clearnup/
+
+
+vibol@khcam:~/Desktop$ mkdir folder1 folder2 folder3
+vibol@khcam:~/Desktop$ mk folders
+mk: command not found
+vibol@khcam:~/Desktop$ mkdir folders
+vibol@khcam:~/Desktop$ mv folder1 folder2 folder3 folders
+vibol@khcam:~/Desktop$ cd folders/
+vibol@khcam:~/Desktop/folders$ ls
+folder1  folder2  folder3
+
+
+--------------------------------
+
+Move back one parent ".."
+
+>> mv folder1 ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
