@@ -1,0 +1,37 @@
+1. Share file from Samba 
+
+https://www.youtube.com/watch?v=Df1MwI9jaPc
+
+-------------------------------
+
+Step by Step 
+
+>> sudo apt-get update : update 
+
+>> sudo apt install samba : install samba
+
+>>whereis samba : check it is install in our directory or not 
+
+>> mkdir /home/vibol/sambashare/ :make directory 
+
+>> sudo nano /etc/samba/smb.conf : edit our directory 
+
+[sambashare]
+        comment = Samba on Ubuntu
+        path = /home/vibol/sambashare
+        read only = no
+        browsable = yes
+
+==> Ctrl + X --> Y to save file conf 
+
+
+>> sudo smbpasswd -a vibol :create user for other login:
+
+vibol
+admin
+
+>> ifconfig : to check our ip address 
+
+go to another compute : \\10.172.8.172\sambashare
+
+then login with our user and password 

@@ -1,0 +1,116 @@
+1. List All Users on the System
+
+>> cut -d: -f1 /etc/passwd
+
+2. Delete User and Home Directory
+
+sudo deluser --remove-home username
+
+
+3. Remove service vsftpd
+
+🧹 To completely remove vsftpd (Very Secure FTP Daemon) from Ubuntu, follow these steps:
+
+🔍 1. Check if vsftpd Is Installed
+dpkg -l | grep vsftpd
+
+
+If it's listed, you're good to proceed.
+
+🛑 2. Stop the Service
+sudo systemctl stop vsftpd
+
+
+
+❌ 3. Uninstall vsftpd and Its Config Files
+sudo apt-get purge vsftpd
+
+
+This removes both the package and its configuration files.
+
+🧼 4. Remove Residual Files (Optional)
+sudo rm -rf /etc/vsftpd.conf
+
+
+You can also check for leftover directories:
+sudo rm -rf /etc/vsftpd
+sudo rm -rf /var/ftp
+
+
+
+🔄 5. Update Package Database
+sudo apt-get update
+
+
+
+✅ 6. Confirm Removal
+dpkg -l | grep vsftpd
+
+
+If there's no output, vsftpd is gone.
+
+Want to switch to another FTP server like ProFTPD or Pure-FTPd? I can help you compare features and set one up.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

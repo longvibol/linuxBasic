@@ -1,0 +1,80 @@
+1. Instll vsftpd
+
+sudo apt update
+sudo apt install vsftpd
+
+2. Configure vsftpd
+
+Backup file:
+
+sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.backup
+
+>> sudo nano /etc/vsftpd.conf 
+
+local_enable=YES
+write_enable=YES
+chroot_local_user=YES
+
+==> add : allow_writeable_chroot=YES
+
+==> add at the end :
+
+pasv_enable=Yes
+pasv_min_port=50000
+pasv_max_port=51000
+
+
+3. Restart vsftpd and Check Status
+
+sudo systemctl restart vsftpd
+
+sudo systemctl status vsftpd
+
+4.Step 4: Open Firewall Ports (Optional)
+
+sudo ufw allow 21/tcp
+sudo ufw allow 50000:51000/tcp
+
+
+5. Login : 
+
+with our user at ubutu password :
+
+vibol
+12345
+
+
+We can create new user :
+
+adduser ftpuser --home /srv/ftp
+chown -R ftpuser /srv/ftp
+
+===============================
+
+Link Vidoe 
+
+https://www.configserverfirewall.com/ubuntu-linux/install-ftp-server-ubuntu-24/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+sudo apt update
+sudo apt install openssh-server
+
+
+sudo systemctl status ssh
+
+
+sudo systemctl start ssh
+
+
+sudo systemctl enable ssh
+
+
+---------------------------
+
+Enable ssh firewall :
+
+sudo ufw allow ssh
+sudo ufw enable
+
+
+Download Putty afrom app then we can use it 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

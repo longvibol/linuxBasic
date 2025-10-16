@@ -1,0 +1,122 @@
+Search we use -k 
+
+>> man man 
+
+MAN(1)                        Manual pager utils                        MAN(1)
+
+NAME
+       man - an interface to the system reference manuals
+
+SYNOPSIS
+       man [man options] [[section] page ...] ...
+       man -k [apropos options] regexp ...
+       man -K [man options] [section] term ...
+       man -f [whatis options] page ...
+       man -l [man options] file ...
+       man -w|-W [man options] page ...
+
+
+===> we use option -k for search :
+
+>> man -k passwd
+
+chgpasswd (8)        - update group passwords in batch mode
+chpasswd (8)         - update passwords in batch mode
+fgetpwent_r (3)      - get passwd file entry reentrantly
+getpwent_r (3)       - get passwd file entry reentrantly
+gpasswd (1)          - administer /etc/group and /etc/gshadow
+grub-mkpasswd-pbkdf2 (1) - generate hashed password for GRUB
+htpasswd (1)         - Manage user files for basic authentication
+ldappasswd (1)       - change the password of an LDAP entry
+openssl-passwd (1ssl) - compute password hashes
+pam_localuser (8)    - require users to be listed in /etc/passwd
+passwd (1)           - change user password
+passwd (1ssl)        - OpenSSL application commands
+passwd (5)           - the password file
+passwd2des (3)       - RFS password encryption
+pwhistory_helper (8) - Helper binary that transfers password hashes from pass...
+smbpasswd (5)        - The Samba encrypted password file
+smbpasswd (8)        - change a user's SMB password
+update-passwd (8)    - safely update /etc/passwd, /etc/shadow and /etc/group
+
+
+There are a lot of search with the word : "passwd"
+
+but we want to search only the page number (5)
+
+>> man 5 passwd 
+
+PASSWD(5)               File Formats and Configuration               PASSWD(5)
+
+NAME
+       passwd - the password file
+
+
+------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

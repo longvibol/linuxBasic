@@ -1,0 +1,242 @@
+- shell is a computer interface to an operation system. 
+
+- Shell expose the OS's Services to human users or other programs. 
+
+- Terminal is a program that runs a shell. 
+
+- bash is the default shell program on most Linux
+
+- install ncal >>sudo apt install ncal
+
+- see date: >> date
+
+- calendar >> ncal (new calendar) = cal 
+
+
+---------------------------------------------------------------------------------
+
+Command Structure : 
+
+>> command -options arguments 
+
+- arguments = return value = passing the value to the command 
+
+Ex: echo hello (hello is the arguments) 
+
+--> hello 
+
+Ex: 
+
+>> ncal 2024
+
+>> ncal oct 2024
+
+---------------------------------------------------
+
+- sort command 
+
+>> sort + file 
+
+- remove command 
+
+>> rm + file
+
+---------------------------------------------------
+
+- Option command 
+
+>> ncal -h (turn off the hgitlight) 
+
+>> ncal -j (Julian day = count all the day) 
+
+>> ncal -M ( from M and S )
+
+>> ncal -3 (print 3 months)
+
+------------------------------
+
+Combine option and argument 
+
+>> ncal -3 -h
+
+==> combinet the command 
+
+>> ncal -3h 
+
+or 
+
+>> ncal ncal -3hM
+
+--------------------------------------------------------
+
+Long Form Options:
+
+Ex1:
+
+>> date -u 
+>> date --universal 
+
+Ex:2
+
+>> sort color.txt -r (revers) 
+or 
+>> sort color.txt --reverse 
+
+Ex:3
+
+>>sort --reverse --unique color.txt (no duplicate) 
+or 
+>> sort -ru color.txt
+
+--------------------------------------------
+
+>> ncal -A 1 (print out After one month from current)  
+>> ncal -B 1 (print out Before one month from current) 
+>> ncal -B1 -A1 (print out Before & After one month from current) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

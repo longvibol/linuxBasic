@@ -1,0 +1,11 @@
+Delete command :
+
+
+1- Deleted file 
+
+>> rm filename.txt
+
+2. Delete folder 
+
+>> rmdir myfolder
+

@@ -1,0 +1,267 @@
+- Nano is a simple text editor 
+
+1-Open file 
+
+>> nano File 
+
++ Enter 
+
+2- Save as
+
+Write out = save as : Ctrl + O
+
+3- Save
+
+Ctrl + s
+
+4- Exit 
+
+>> Ctrl + x 
+
+5- Edit the file that are not create 
+
+nana hello.txt (this file hello.txt is not yet create but we can use nana to open and add the text or something else}
+
+6- short cut in nana 
+
+- Ctrl + G = open help in the nano 
+- Ctrl + v = go down 
+- Ctrl + y = back 
+
+==> 
+
+M-\ = go to the first file 
+
+M-/ = go to the last line 
+
+M is the meta key in the old but now we use Alt 
+
+==> 
+
+Alt + \
+Alt + /
+
+
+---------------------------------------------------
+
+* Search 
+
+- Ctrl + W = than we put the word and need to know it start search from the line we are currently 
+- to search backword : Alt + B
+
++ Search and replace : 
+
+Ctrl + \ to replace 
+
+>> Search (to replace) [vibol]: Gastby 
+
+
+----------------------------------------------------
+
+Spell Checker : by the default it will disable and we can anable it in the location 
+
+>> /etc/nanorc 
+
+>> sudo nano /etc/nanorc
+
+## Use this spelling checker instead of the internal one.  This option
+## does not have a default value.
+# set speller "aspell -x -c"
+
+
+>>Ctrl + T => Ctrl +S 
+
+it will show the suggestion 
+
+
+-----------------------------------
+****************
+To add the review note :
+
+^R     (Ins)     Insert another file into current buffer (or into new buffer)
+
+>> Ctrl + r 
+>> review.txt
+
+
+- We have two file name : recipe.txt  review.txt
+
+ចឹងវាដាក់ចូលគ្នាបានហើយ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

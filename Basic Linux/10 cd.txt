@@ -1,0 +1,31 @@
+1. change directory 
+
+>> ls 
+>> cd Destop 
+
+2. goback 
+
+>> cd .. 
+
+3. go back to the root 
+
+>> cd /
+
+-------------------------------
+
++ Relative Paths : vibol@khcam:~/Desktop/Dogs$ cd Desktop/Dogs/
+
+យើងត្រូវឈរនៅទីតាំងណាមួយហើយ ទៅបន្តបាន 
+
+តែបងយើងចង់ទៅកន្លែងផ្សែងទៀតវាមិនអោយគេចឹងគេត្រូវប្រើ 
+
+Absolute Paths : 
+
+>> cd /home/vibol/Desktop/Dogs/
+
+------------------------------------------------
+
+
+
+
+

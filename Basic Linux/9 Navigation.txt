@@ -1,0 +1,145 @@
+1- Root/ Go to root directory
+
+>> xdg-open /
+
+- short hand : "/"
+
+2- home directory : have the user inside 
+
+- short hand : "~"
+
+>> xdg-open ~
+
+3- pwd : print working directory : tell me where am I 
+
+>> pwd 
+
+/home/vibol
+
+or 
+
+/home/vibol/Desktop/New Folder
+
+
+4- ls : list command to shoe the file or folder 
+
+>> vibol@khcam:~$ ls 
+
+Desktop    Downloads          Music     Public           sambashare  Templates
+Documents  eclipse-workspace  Pictures  PycharmProjects  snap        Videos
+
+4.1 Option in ls -l
+
+>> ls -l : see the long list 
+
+drwxrwxr-x  4 vibol vibol    4096 Oct 10 11:31  Dogs
+drwxrwxr-x  2 vibol vibol    4096 Oct  7 10:57 'New Folder'
+drwxrwxr-x  2 vibol vibol    4096 Jul 24 14:48  PythonH
+
+
+explain :
+
+drwxrwxr-x  4 vibol vibol    4096 Oct 10 11:31  Dogs
+
+- Permission : drwxrwxr-x
+- owner : vibol
+- group : vibol
+- size 	: 4096
+- Modify date : Oct 10 11:31
+- folder name : Dogs
+
+
+4.2 Option in ls -a (show high file) 
+
+>> ls -a
+
+vibol@khcam:~/Desktop$ ls -a
+ .
+ ..
+ Dogs
+'.~lock.V1_HSC- HRMS Contract 2025 Oct 02_Draft.docx#'
+'New Folder'
+ PythonH
+
+Mostly it all the configuration file 
+
+4.3 Combine ls -la
+
+>> vibol@khcam:~/Desktop$ ls -la Dogs
+total 20
+drwxrwxr-x 4 vibol vibol 4096 Oct 10 11:31 .
+drwxr-xr-x 6 vibol vibol 4096 Oct 10 11:28 ..
+drwxrwxr-x 2 vibol vibol 4096 Oct 10 11:30 adultss
+-rw-rw-r-- 1 vibol vibol   51 Oct  7 10:57 color.txt
+drwxrwxr-x 2 vibol vibol 4096 Oct 10 11:31 puppies
+
+4.4 option 
+
+>>vibol@khcam:~/Desktop$ ls -h -la Dogs
+total 20K
+drwxrwxr-x 4 vibol vibol 4.0K Oct 10 11:31 .
+drwxr-xr-x 6 vibol vibol 4.0K Oct 10 11:28 ..
+drwxrwxr-x 2 vibol vibol 4.0K Oct 10 11:30 adultss
+-rw-rw-r-- 1 vibol vibol   51 Oct  7 10:57 color.txt
+drwxrwxr-x 2 vibol vibol 4.0K Oct 10 11:31 puppies
+
+
+-------
+
+Example : man ls
+
+--sort=WORD
+              sort  by  WORD instead of name: none (-U), size (-S), time (-t),
+              version (-v), extension (-X), width
+
+
+>> vibol@khcam:~/Desktop$ ls -l --sort=time Dogs
+total 12
+drwxrwxr-x 2 vibol vibol 4096 Oct 10 11:31 puppies
+drwxrwxr-x 2 vibol vibol 4096 Oct 10 11:30 adultss
+-rw-rw-r-- 1 vibol vibol   51 Oct  7 10:57 color.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

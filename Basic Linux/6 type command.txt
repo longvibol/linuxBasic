@@ -1,0 +1,22 @@
+- type command = tell the type of the particular command 
+
+>> type clear 
+
+--> clear is hashed (/usr/bin/clear)
+
+Explain:  
+- clear is hashed
+- (/usr/bin/clear) : location 
+
+>> type mkdir 
+
+mkdir is /usr/bin/mkdir
+
+this is the execute scrip 
+
+
+
+
+
+
+

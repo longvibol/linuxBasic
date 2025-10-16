@@ -1,0 +1,157 @@
+>> man ncal: syntax 
+
+SYNOPSIS
+       cal [-3hjy] [-A number] [-B number] [[month] year]
+       cal [-3hj] [-A number] [-B number] -m month [year]
+
+
+-- indie the dob : [-3hjy] is the optional we can use the command with the []
+
+
+Example : 
+
+ncal [-CN] [-H yyyy-mm-dd] [-d yyyy-mm]
+
+
+>> ncal -d 1990-12
+
+vibol@khcam:~$ ncal -d 1990-12
+    December 1990     
+Su     2  9 16 23 30
+Mo     3 10 17 24 31
+Tu     4 11 18 25   
+We     5 12 19 26   
+Th     6 13 20 27   
+Fr     7 14 21 28   
+Sa  1  8 15 22 29 
+
+
+----------------------------------------
+
+>> man echo : syntax 
+
+SYNOPSIS
+       echo [SHORT-OPTION]... [STRING]...
+       echo LONG-OPTION
+
+Explain :
+
+[STRING]…  មានន័យថាយើងអាចដាក់បាន parameter ច្រើន
+
+Ex: 
+
+>> echo hello world your cutie pie 
+
+==> hello world your cutie pie 
+
+------------------------------------------------------
+
+>> man cp :
+
+NAME
+       cp - copy files and directories
+
+SYNOPSIS
+       cp [OPTION]... [-T] SOURCE DEST
+       cp [OPTION]... SOURCE... DIRECTORY
+       cp [OPTION]... -t DIRECTORY SOURCE...
+
+--> 
+SOURCE DEST គេដាក់ខាងក្រៅ []ចឹងគឺត្រូវតែមាន
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

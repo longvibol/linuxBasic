@@ -1,0 +1,104 @@
+1- Deleted file 
+
+>> rm = remove file don't have in trust (perment gone)
+
+>> rm + "file name"
+
+>>  rm hell.txt vibol.txt 
+
+--- Remove from the relative path 
+
+>> rm ~/Desktop/Dogs/hello.txt 
+
+
+2- Deleted folder 
+
+- Delted emplty file 
+
+>> rm -d Dogs
+in case the Dogs have the file inside, so we can no deleted it 
+
+or we can use another command :
+
+>> rmdir Dogs 
+
+---------------------------------------------
+
+
+
+>> rm Dogs/ -d
+rm: cannot remove 'Dogs/': Directory not empty
+
+To deleted we use -r 
+
+>> rm -r Dogs
+
+
+------------
+
+- I = interactive as use before deleted 
+
+in case we have inside the folder have manh file then we want to check one by one to delted 
+
+>> rm -r -I Hello
+
+vibol@khcam:~/Desktop/Dogs$ touch vibo.txt hi.txt test.txt
+vibol@khcam:~/Desktop/Dogs$ ls
+hello.txt  hi.txt  test.txt  vibo.txt
+vibol@khcam:~/Desktop/Dogs$ rm -ri Dogs
+rm: cannot remove 'Dogs': No such file or directory
+vibol@khcam:~/Desktop/Dogs$ cd ..
+vibol@khcam:~/Desktop$ rm -ri Dogs/
+rm: descend into directory 'Dogs/'? y
+rm: remove regular empty file 'Dogs/vibo.txt'? n
+rm: remove regular empty file 'Dogs/hello.txt'? y
+rm: remove regular empty file 'Dogs/hi.txt'? n
+rm: remove regular empty file 'Dogs/test.txt'? n
+rm: remove directory 'Dogs/'? n
+vibol@khcam:~/Desktop$ cd Dogs/
+vibol@khcam:~/Desktop/Dogs$ ls
+hi.txt  test.txt  vibo.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

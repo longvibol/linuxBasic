@@ -1,0 +1,24 @@
+check file type:
+
+>> file vibol.txt 
+
+==> vibol.txt: empty
+
+>> file adultss/
+==> adultss/: directory
+
+
+Note:
+
+ទោះបីយើងប្តូរ extension វាក៏ដោយតែវានៅតែដឹងថាវា ជាប្រភេទអ្វីដែល 
+
+>> file vibol 
+vibol: ASCII text
+
+
+------------- 
+
+Open file 
+
+>> file vibol.html 
+vibol.html: HTML document, ASCII text

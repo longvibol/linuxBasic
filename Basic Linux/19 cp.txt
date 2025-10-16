@@ -1,0 +1,66 @@
+copy : cp 
+
+>> cp index.js indexHtml.js
+
+to delete line : Ctrl + K to kill the line 
+
++ move and copy 
+
+
+>> cp my.txt ~/Desktop/myHello.txt
+
+
+SYNOPSIS
+       cp [OPTION]... [-T] SOURCE DEST
+       cp [OPTION]... SOURCE... DIRECTORY
+       cp [OPTION]... -t DIRECTORY SOURCE...
+
+
++ Copy multiple file 
+
+cp [OPTION]... SOURCE... DIRECTORY 
+
+- SOURCE... copy one file or more 
+
+
+>>cp index.css index.js ~/Desktop/Hello/
+
+
++ copy with relative path (-r) : is use for backup 
+
+>> cp -r folders/ myfolder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
