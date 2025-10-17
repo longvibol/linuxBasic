@@ -41,6 +41,15 @@ Ctrl + _ (then put the line number you want to go)
 
 -----------------------------------------------------
 
++ checks the size of the foler 
+
+>> du -hsx * | sort -rh | head -10
+
++ history 
+
+!line of the history 
+
+>> !213
 
 
 
