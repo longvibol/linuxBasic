@@ -1,0 +1,40 @@
+To shut down a computer from the command line in Ubuntu, you can use any of the following commands depending on your needs:
+
+### 🛑 Immediate Shutdown
+```bash
+sudo shutdown now
+```
+- Shuts down the system immediately.
+- Requires `sudo` privileges.
+
+### ⏱ Scheduled Shutdown
+```bash
+sudo shutdown +10
+```
+- Shuts down the system after 10 minutes.
+- You can replace `10` with any number of minutes.
+
+### 📅 Shutdown at Specific Time
+```bash
+sudo shutdown 22:00
+```
+- Schedules shutdown at 10:00 PM.
+
+### 🔌 Power Off
+```bash
+sudo poweroff
+```
+- Similar to `shutdown now`, but explicitly powers off the machine.
+
+### 🧊 Halt (Stops all processes but may not power off)
+```bash
+sudo halt
+```
+
+### 🌀 Reboot Instead
+```bash
+sudo reboot
+```
+- Restarts the system.
+
+Let me know if you want to trigger shutdown remotely or via script — I can help you automate it.

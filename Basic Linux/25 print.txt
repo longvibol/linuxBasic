@@ -1,0 +1,110 @@
+1- printD entire file 
+
+>> cat file name 
+
+2. print with the line number 
+
+>> cat file -n 
+
+3- less to print the file page by page 
+
+>> F : go forward 
+>> space : one page up 
+>> ctrl + b : backword 
+
+4- search with less 
+
+>> /Dog 
+to continue search 
+/ 
+
++ enter 
+
+5- Run case insensitive search 
+
+>> less file 
+>> / to search then -I 
+
+To search with Ignorcase 
+
+or 
+
+>> less poem.txt -I
+
+6- print with number 
+
+>> less -N poem.txt 
+
+7- print from the button 8 line :
+
+>> tail -n8 poem.txt 
+
+We are led to Believe a Lie
+When we see not Thro the Eye
+Which was Born in a Night to perish in a Night 
+When the Soul Slept in Beams of Light 
+God Appears & God is Light
+To those poor Souls who dwell in Night 
+But does a Human Form Display
+To those who Dwell in Realms of day
+
+8- print revers 
+
+>> tac purchases.txt 
+
+steve1      paypal     19.99
+steve1      paypal     34.99
+sherif12    credit     456.75
+robert91    credit     12.00
+sherif12    paypal     99.99
+amelie54    paypal     195.50
+robert91    credit     49.50
+
+
+9- count the line 
+
+>> wc -l purchage.txt 
+
+7 purchases.txt
+
+10- short by the price 
+
+>> sort -nk3 purchases.txt 
+
+robert91    credit     12.00
+steve1      paypal     19.99
+steve1      paypal     34.99
+robert91    credit     49.50
+sherif12    paypal     99.99
+amelie54    paypal     195.50
+sherif12    credit     456.75
+
+
+11- print in the revese 
+
+>>sort -nrk3 purchases.txt
+
+sherif12    credit     456.75
+amelie54    paypal     195.50
+sherif12    paypal     99.99
+robert91    credit     49.50
+steve1      paypal     34.99
+steve1      paypal     19.99
+robert91    credit     12.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

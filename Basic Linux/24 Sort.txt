@@ -1,0 +1,120 @@
+- sort : the file but not change the file 
+
+--------------------------------------
+Sort by spacing :
+
+>>sort -n -k3 price ( short by number with short k = columne 3) 
+
+Ex 
+
+- house 192 1 
+- raceer 49.0 3
+- chocolate 20.0 13
+- pizza 13 2 
+
+-------------------------------
+
+vibol@khcam:~/Desktop$ sort color.txt 
+black 
+black 
+blue
+orange
+red
+white
+white
+yellow
+
+
+>> sort -r file (-r reverse) 
+
+vibol@khcam:~/Desktop$ sort color.txt -r
+yellow
+white
+white
+red
+orange
+blue
+black 
+black 
+
+
+---------------------------------------------------
+
+* sort number
+
+>> sort -n prices (from small to big) 
+
+
+* sort unit 
+
+>> sort -u prices
+
+-----------------------------------
+
+
+vibol@khcam:~/Desktop$ sort pricese 
+chocolate 19.99 12
+fish 13 2
+house 199.99 1
+pencil 0.50 49
+pizza 5.00 1
+racecar 49.00 3
+vibol@khcam:~/Desktop$ sort -nk3 pricese 
+house 199.99 1
+pizza 5.00 1
+fish 13 2
+racecar 49.00 3
+chocolate 19.99 12
+pencil 0.50 49
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

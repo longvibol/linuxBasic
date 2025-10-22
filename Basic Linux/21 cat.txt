@@ -1,0 +1,82 @@
+cat : concatenates (cat) : open the file without edit = print 
+
+>> cat hello.txt 
+
+- ដាក់ file ចូលគ្នា
+
+>>​​ cat hello.txt hi.txt 
+Hello File
+================
+
+- name
+- book 
+- text
+Hi Text
+================
+
+- name hi
+- book hi 
+- text hi
+
+
++ search inside the cat 
+>> cat or less hello.txt 
+
+To search / name 
+
+----------------------------------------------
+
+* command in the bash history * 
+
+>> cat ~/.bash_history it just open the file 
+so if we want to search we use less 
+
+>> less ~./bash_history 
+
+/pwd 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
