@@ -1,0 +1,14 @@
+syntax : 
+
+cat < original.txt > output.txt 
+
+==> it reat the file from original.txt then it write to the output.txt 
+
+
+or 
+
+cat < original.txt >> output.txt 
+
+
+Ex sort < name.txt > sorted.txt
+

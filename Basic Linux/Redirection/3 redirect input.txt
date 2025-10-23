@@ -1,0 +1,27 @@
+create input to the command <
+
+syntax : cat < chickens.txt 
+
+Ex: sort cal.txt (cal.txt is the argument to the sort command ) 
+
+
+>> man sort 
+With no FILE, or when FILE is -, read standard input.
+
+>> cat < cat.txt (this is not input that why it read standard)
+
+
+hello my name is vibol
+mylove hello
+
+
+
+
+
+
+
+
+
+
+
+

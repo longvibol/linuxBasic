@@ -1,0 +1,27 @@
+error : 2> 
+
+syntax : cat nonexistentfile 2> error.txt 
+
+- porpose to keep the error when get error 
+
+
+>> sort trwewer.txtw 2> errorLocak.txt
+
+what is it is number 2>
+
++
+
+input (0) -> command -> (1) output and (2) error 
+
+ex 
+
+date 1> now.txt
+
+
+or cat 0< dog.txt 
+
+or 
+
+ls -zzz 2>> error.txt 
+
+
