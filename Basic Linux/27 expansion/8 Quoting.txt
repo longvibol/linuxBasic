@@ -1,0 +1,32 @@
+Quoting : ""
+
+
+Because the echo perform word quoting it will remove the space 
+
+>> echo hello             hi 
+==> hello hi 
+
+we can not print the space in between 
+
+>> echo "hello            hi"
+hello            hi
+
+- when it have $ sign it will think for the variable 
+
+Ex: 
+
+>>echo "holly $hit"
+holly 
+
+
+>> echo "today is .... $(date)"
+today is .... Mon Oct 27 02:32:30 PM +07 2025
+
+
+- Print all in side the quoting 
+
+>> echo 'holy $hit'
+holy $hit
+
+
+

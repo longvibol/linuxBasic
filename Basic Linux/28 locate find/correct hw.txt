@@ -1,0 +1,124 @@
+1-Using find (and another command), count the number of case files that include "closed", in lowercase, in their name. You should find 980 cases.
+
+>> find . -name "*close*" | wc -l
+
+
+2- Oh no, one of our new detectives labels his cases using "CLOSED" in all caps.  Find the 3 cases that have "CLOSED" in their name
+
+>> find . -name "*CLOSED*" | xargs ls
+./case_1660_CLOSED.txt	./case_2320_CLOSED.txt	./case_2328_CLOSED.txt
+
+
+3-Get a total count of all closed cases that include "closed" in their name, uppercase or lowercase.   You should get a count of 983!
+
+>> find . -iname "*closed*" | wc -l
+
+
+4- Get a count for the total number of open cases with odd numbered case numbers (find the open cases that have a 1,3,5,7, or 9 as the last digit in their case number).  You should get 519 cases.
+
+>> find . -name "*open*" -a -name "*[13579]*" | wc -l
+
+or find -iname "*[13579]_open*" | wc -l
+
+
+5-Find the three empty cases
+
+>> find . -empty
+./case_2950_open.txt
+./case_2979_closed.txt
+./case_2900_open.txt
+
+
+
+6- Most of these files are quite small, but there are 3 pretty large case files.  Find the three files that are larger than 20k in size
+
+>> find . -size +20k | xargs ls -lah | head -n 3
+
+or 
+
+>> find -size +20k
+
+
+-rw-r--r-- 1 vibol vibol 154K May  4  2016 ./case_1503_closed.txt
+-rw-r--r-- 1 vibol vibol  22K May  4  2016 ./case_1647_open.txt
+-rw-r--r-- 1 vibol vibol 132K May  4  2016 ./case_1995_open.txt
+
+
+7-Find the one case file that is larger than 150k and is closed
+
+>> find . -size +150k -name "*closed*" | xargs ls -lah
+
+-rw-r--r-- 1 vibol vibol 154K May  4  2016 ./case_1503_closed.txt
+
+
+8- find -newer yesterday.txt 
+
+or 
+
+>> find . -type f -newer yesterday.txt | xargs cat
+
+LOTS OF CASE STUFF IN HERE! 
+LOTS OF CASE STUFF IN HERE! 
+LOTS OF CASE STUFF IN HERE! 
+LOTS OF CASE STUFF IN HERE! 
+LOTS OF CASE STUFF IN HERE! 
+LOTS OF CASE STUFF IN HERE! 
+LOTS OF CASE STUFF IN HERE! 
+LOTS OF CASE STUFF IN HERE! 
+LOTS OF CASE STUFF IN HERE! 
+
+
+or 
+
+>> find -newer yesterday.txt 
+.
+./case_2307_open.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

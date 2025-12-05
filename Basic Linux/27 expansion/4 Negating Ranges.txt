@@ -1,0 +1,76 @@
+- Characters to NOT match, using a caret (^)
+
+Ex:
+
+- ls [^a]* will match any files that do NOT start with "a" 
+- ls [^0-9]* will match any files that do NOT start with a numeric digit (0-9)
+
+Ex: start every thing that not much capital 
+
+>> echo [^A-Z]*
+
+expension list.txt pricese test works
+
+
+
+Ex: រក file or folder ណាដែលមិនផ្តើមដោយ C and capital 
+
+>> echo [^Cc]*
+
+expension FilesExercise FilesExercise.zip list.txt pricese PythonH Redirection test Todos Udemy - The Linux Command Line Bootcamp Beginner To Power User 2025-1 works
+
+Ex: two charater not much 
+
+>> echo [^Cc]*
+expension FilesExercise FilesExercise.zip list.txt pricese PythonH Redirection test Todos Udemy - The Linux Command Line Bootcamp Beginner To Power User 2025-1 works
+
+
+>> echo [^Cc][^x]*
+FilesExercise FilesExercise.zip list.txt pricese PythonH Redirection test Todos Udemy - The Linux Command Line Bootcamp Beginner To Power User 2025-1 works
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+>> ls -l
+total 0
+-rw-rw-r-- 1 vibol vibol 0 Oct 30 13:40 myfile.txt
+
+
+--> Oct 30 13:40 this time is the last modification time : it called mtime 
+
+
+1-mtime
+
+Ex: copy fild :  
+
+mv myfile.txt MYFILE.txt
+vibol@khcam:~/Desktop/Timing$ ls -l
+total 0
+-rw-rw-r-- 1 vibol vibol 0 Oct 30 13:40 MYFILE.txt
+
+
+it does not change the " mtime " because we are not change anything inside 
+
+
+2- ctime
+
+Ex: when change time (ls -lc : c mean the late change time) 
+
+nano MYFILE.txt 
+vibol@khcam:~/Desktop/Timing$ ls -l
+total 4
+-rw-rw-r-- 1 vibol vibol 13 Oct 30 13:43 MYFILE.txt
+
+
+3- atime : access time or update
+
+
+>> ls -lu ( u is the access time) 
+
+
+vibol@khcam:~/Desktop/Timing$ ls -lu
+total 4
+-rw-rw-r-- 1 vibol vibol 13 Oct 30 13:43 MYFILE.txt
+vibol@khcam:~/Desktop/Timing$ cat MYFILE.txt 
+hello change
+vibol@khcam:~/Desktop/Timing$ ls -lu
+total 4
+-rw-rw-r-- 1 vibol vibol 13 Oct 30 13:47 MYFILE.txt
+
+
+យើងមើលតើគេ access ពេលចុងក្រោយពេលណា​​ ls -lu 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

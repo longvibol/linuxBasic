@@ -1,0 +1,254 @@
+find = it look to all the file inside the computer so it is slower than locate.
+
+>> vibol@khcam:~/Desktop/Redirection$ ls
+cal.txt  colorSort.txt  error.txt  hello.txt  listAll.txt
+cat.txt  color.txt      erro.txt   list1.txt  output
+vibol@khcam:~/Desktop/Redirection$ find
+.
+./error.txt
+./list1.txt
+./colorSort.txt
+./cal.txt
+./listAll.txt
+./output
+./hello.txt
+./cat.txt
+./color.txt
+./erro.txt
+
+
+-- if the folder have directory it will show all when we use find 
+
+>> find | wc -l
+559
+
+
+-----------------------------------------------
+
+* find with type 
+
+>> find -type f  : search only file 
+>> find -type d  : search only directory 
+
+Ex:
+
+vibol@khcam:~/Desktop/Redirection$ mkdir fielFolder
+vibol@khcam:~/Desktop/Redirection$ find -type f
+./error.txt
+./list1.txt
+./colorSort.txt
+./cal.txt
+./listAll.txt
+./output
+./hello.txt
+./cat.txt
+./color.txt
+./erro.txt
+vibol@khcam:~/Desktop/Redirection$ find -type d
+.
+./fielFolder
+
+
+---------------------------------
+
+* finding by name 
+
+> find ~/Destop -name "*.txt"
+
+Ex: find all the file that end with txt 
+
+>>$ find ~ -type f -name "*.txt"
+
+Ex: find exact name when we put the ""
+
+>> find ~ -name "vibol"
+/home/vibol
+/home/vibol/snap/notepad3/common/.wine/drive_c/users/vibol
+/home/vibol/snap/winbox/common/.wine/drive_c/users/vibol
+/home/vibol/Desktop/vibol
+
+Ex: find with limit line show 
+
+>> find -name "*.txt" | head -n 5
+
+Ex: find similar name 
+
+>> find ~ -name "*vibol*" 
+
+vibol@khcam:~/Desktop/Redirection$ find ~ -name "*vibol*"
+/home/vibol
+/home/vibol/snap/notepad3/common/.wine/drive_c/users/vibol
+/home/vibol/snap/winbox/common/.wine/drive_c/users/vibol
+/home/vibol/.java/.userPrefs/.user.lock.vibol
+/home/vibol/.java/.userPrefs/.userRootModFile.vibol
+/home/vibol/Desktop/vibol
+
+Ex: to egnor case use -iname
+
+>>find ~ -iname "*Test*"
+
+
+Ex: find a number inside of the file or folder 
+
+>> find ~ -name "*[0-9]*"
+
+Ex:
+
+>> find ~/Desktop/Redirection/ -name "*[0-9]*"
+/home/vibol/Desktop/Redirection/list1.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

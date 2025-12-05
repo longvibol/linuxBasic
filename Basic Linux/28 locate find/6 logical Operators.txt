@@ -1,0 +1,106 @@
+-and or - not operator to create more complex queries 
+
+>> find -name "*chick*" -or -name "*kitty*"
+>> find -type -f -not -name "*.html"
+
+
+1- find with not 
+
+>> vibol@khcam:~$ find ~/Desktop/Redirection/ -name "*.txt"
+/home/vibol/Desktop/Redirection/error.txt
+/home/vibol/Desktop/Redirection/list1.txt
+/home/vibol/Desktop/Redirection/colorSort.txt
+/home/vibol/Desktop/Redirection/fielFolder/cal.txt
+/home/vibol/Desktop/Redirection/listAll.txt
+/home/vibol/Desktop/Redirection/hello.txt
+/home/vibol/Desktop/Redirection/cat.txt
+/home/vibol/Desktop/Redirection/color.txt
+/home/vibol/Desktop/Redirection/erro.txt
+
+
+==> Not
+
+>> vibol@khcam:~$ find ~/Desktop/Redirection/ -not -name "*.txt"
+/home/vibol/Desktop/Redirection/
+/home/vibol/Desktop/Redirection/fielFolder
+/home/vibol/Desktop/Redirection/output
+
+
+2- NOT
+
+>> find -cmin -60 -not -name "*.log"
+
+the shortcut of -not is ! 
+
+>>find -cmin -60 ! -name "*.log"
+
+
+3- OR 
+
+>> find ~ -iname "mon*"
+
+>> find ~ -iname "vibol" -or -iname "vi*"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

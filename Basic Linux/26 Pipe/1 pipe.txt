@@ -1,0 +1,13 @@
+Pipe character (|) to separate two commands. 
+
+to connect two command 
+
+>> ls /usr/bin | less 
+
+what to know how many file inside 
+
+>> ls /usr/bin -1 : show only one line 
+
+>> ls /usr/bin -1 | wc -l
+
+>> date | rev

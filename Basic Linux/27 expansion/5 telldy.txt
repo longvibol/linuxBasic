@@ -1,0 +1,9 @@
+~ = home directory 
+
+
+>> echo ~
+
+/home/vibol
+
+
+

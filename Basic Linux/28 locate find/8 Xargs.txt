@@ -1,0 +1,25 @@
+xargs :- build and execute command lines from standard input
+
+example :
+Find empty find and show the user right 
+
+>> find -empty -exec ls -l '{}' ';'
+
+explain : the command will run one time on the {} to the each line 
+
+
+or 
+
+it will take the standard in put then pash to the next step 
+
+
+>> find -empty | xargs ls -la
+
+- it will go to bundle the file then run ls 
+
+
+Note for the command that do not except the standard input 
+
+we want to show to the screen than make the directory : with this command below it will not working
+
+>> echo hello world | mkdir 

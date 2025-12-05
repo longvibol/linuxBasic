@@ -1,0 +1,182 @@
+Crete file with time
+
+>> ouch last_week -d "1 week ago"
+vibol@khcam:~/Desktop/Timing$ ls -lu
+total 4
+-rw-rw-r-- 1 vibol vibol  0 Oct 23 14:34 last_week
+-rw-rw-r-- 1 vibol vibol 16 Oct 30 13:47 MYFILE.txt
+
+
+
+>> touch last_month -d "1 month ago"
+vibol@khcam:~/Desktop/Timing$ ls -lu
+total 4
+-rw-rw-r-- 1 vibol vibol  0 Sep 30 14:35 last_month
+-rw-rw-r-- 1 vibol vibol  0 Oct 23 14:34 last_week
+-rw-rw-r-- 1 vibol vibol 16 Oct 30 13:47 MYFILE.txt
+
+
+>> touch three_days_ago     -d "3 days ago"
+vibol@khcam:~/Desktop/Timing$ ls -lu
+total 4
+-rw-rw-r-- 1 vibol vibol  0 Sep 30 14:35 last_month
+-rw-rw-r-- 1 vibol vibol  0 Oct 23 14:34 last_week
+-rw-rw-r-- 1 vibol vibol 16 Oct 30 13:47 MYFILE.txt
+-rw-rw-r-- 1 vibol vibol  0 Oct 27 14:36 three_days_ago
+
+
+>> vibol@khcam:~/Desktop/Timing$ touch two_days_ago     -d "2 days ago"
+vibol@khcam:~/Desktop/Timing$ ls -lu
+total 4
+-rw-rw-r-- 1 vibol vibol  0 Sep 30 14:35 last_month
+-rw-rw-r-- 1 vibol vibol  0 Oct 23 14:34 last_week
+-rw-rw-r-- 1 vibol vibol 16 Oct 30 13:47 MYFILE.txt
+-rw-rw-r-- 1 vibol vibol  0 Oct 27 14:36 three_days_ago
+-rw-rw-r-- 1 vibol vibol  0 Oct 28 14:37 two_days_ago
+
+
+>> touch 10_mins_ago -d "10 minutes ago"
+
+
+-------------------------------------------------
+
+Sample search 
+
+vibol@khcam:~/Desktop/Timing$ ls -lu
+total 4
+-rw-rw-r-- 1 vibol vibol  0 Oct 30 14:28 10_mins_ago
+-rw-rw-r-- 1 vibol vibol  0 Oct 30 14:08 30_mins_ago
+-rw-rw-r-- 1 vibol vibol  0 Sep 30 14:35 last_month
+-rw-rw-r-- 1 vibol vibol  0 Oct 23 14:34 last_week
+-rw-rw-r-- 1 vibol vibol 16 Oct 30 13:47 MYFILE.txt
+-rw-rw-r-- 1 vibol vibol  0 Oct 30 14:38 right_now
+-rw-rw-r-- 1 vibol vibol  0 Oct 27 14:36 three_days_ago
+-rw-rw-r-- 1 vibol vibol  0 Oct 28 14:37 two_days_ago
+
+
+1. find the file that is the last modification time 
+
+Ex: find file that modifiy 30 min ago 
+
+>> find -mmin 30 (exact time ) 
+>> find -mmin -30 (less than 30 mins)
+>> find -mmin +30 (more than 30 mins)
+
+Ex1: 
+
+>> vibol@khcam:~/Desktop/Timing$ find -mmin -30
+.
+./10_mins_ago
+./right_now
+
+
+Ex2:
+
+>> vibol@khcam:~/Desktop/Timing$ find -mmin +30
+./two_days_ago
+./last_week
+./last_month
+./MYFILE.txt
+./three_days_ago
+./30_mins_ago
+
+
+2- find file that access or change (-amin or -cmin) 
+
+vibol@khcam:~/Desktop/Timing$ cat last_month 
+vibol@khcam:~/Desktop/Timing$ ls -lu
+total 4
+-rw-rw-r-- 1 vibol vibol  0 Oct 30 14:28 10_mins_ago
+-rw-rw-r-- 1 vibol vibol  0 Oct 30 14:08 30_mins_ago
+-rw-rw-r-- 1 vibol vibol  0 Oct 30 14:46 last_month
+-rw-rw-r-- 1 vibol vibol  0 Oct 23 14:34 last_week
+-rw-rw-r-- 1 vibol vibol 16 Oct 30 13:47 MYFILE.txt
+-rw-rw-r-- 1 vibol vibol  0 Oct 30 14:38 right_now
+-rw-rw-r-- 1 vibol vibol  0 Oct 27 14:36 three_days_ago
+-rw-rw-r-- 1 vibol vibol  0 Oct 28 14:37 two_days_ago
+vibol@khcam:~/Desktop/Timing$ find -amin +10
+./10_mins_ago
+./two_days_ago
+./last_week
+./MYFILE.txt
+./three_days_ago
+./30_mins_ago
+vibol@khcam:~/Desktop/Timing$ find -amin -1
+./last_month
+
+
+3- atime : n*24 hours ago (work in day) 
+
+>> vibol@khcam:~/Desktop/Timing$ find -atime +1
+
+./two_days_ago
+./last_week
+./three_days_ago
+vibol@khcam:~/Desktop/Timing$ find -atime -1
+.
+./10_mins_ago
+./right_now
+./last_month
+./MYFILE.txt
+./30_mins_ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

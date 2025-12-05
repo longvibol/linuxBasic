@@ -1,0 +1,24 @@
+? = represents any single character = one character 
+
+Ex1:
+
+>> touch app1.css app2.css app3.css navbar.css
+
+if we want to move file that have app?.css to the new folder 
+
+>> mkdir hello | mv app?.txt hello 
+
+Ex2: show all the file with specific 
+
+>> echo *.???
+
+E2: move file back to one folder 
+
+>> echo *.???
+app1.css app2.css app3.css
+
+vibol@khcam:~/Desktop/expension/hello$ mv app?.??? ..
+
+
+
+

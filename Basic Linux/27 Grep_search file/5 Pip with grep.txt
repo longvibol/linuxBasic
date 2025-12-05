@@ -1,0 +1,62 @@
+>> man grep | grep "count" -I
+
+       -c, --count
+              Suppress normal output; instead print a count of matching  lines
+              above), count non-matching lines.
+       -m NUM, --max-count=NUM
+              lines.  When the -c or --count option is also  used,  grep  does
+              not   output   a  count  greater  than  NUM.   When  the  -v  or
+       Large  repetition  counts  in the {n,m} construct may cause grep to use
+
+
+-------------------------
+
+We can use find and grep to find 
+
+- find to narrow down the filter 
+and grep to search 
+
+
+- Find the file name : -l
+
+vibol@khcam:~/Desktop/grep$ grep "love" SongOfMyself.txt -il
+SongOfMyself.txt
+
+
+** Find with url 
+
+vibol@khcam:~$ 
+
+grep -rE "// Source - https://stackoverflow.com/a
+// Posted by Daveo, modified by community. See post 'Timeline' for change history
+// Retrieved 2025-12-05, License - CC BY-SA 4.0
+
+https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
+" ~ -I
+
+----------- 
+
+Regex parttern : 
+
+
+https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
