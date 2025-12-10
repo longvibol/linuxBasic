@@ -1,0 +1,10 @@
+root : refere to Linux systems super user called root. 
+
+How to login as root: by default it log the Linux system 
+
+>> sudo = run command ask the root user 
+
+>> sudo -l 
+
+
+

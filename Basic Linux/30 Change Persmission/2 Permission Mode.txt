@@ -1,0 +1,57 @@
+Use the Octo number to change the permission :
+
+0 : off
+1 : for on 
+
+rwx : 111 = 7 
+--- : 000 = 0 
+
+------------------------------------------------------------
+
+su : substitute user
+
+>> su - braly
+>> password : admin4004
+
+to exit => 
+
+>> exit 
+
+then it will logout to vibol user
+
+-------------------------------------------------------------
+
+>> su - username : ពេលវា login ហើយវាទៅទីតាំង Home directory ving 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

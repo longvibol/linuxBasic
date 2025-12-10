@@ -1,0 +1,114 @@
+-chown : change the owner and/or the group owner of a specific file or directory 
+
+>> chown User[:group] files
+>> chown BoJack file.txt
+
+
+Ex:
+
+1- change user permison 
+
+>> chown user file
+
+-rw-rw-r--  1 braly vibol         18 Dec  8 16:13 monkey.txt
+
+
+>> sudo chown vibol monkey.txt 
+
+-rw-rw-r--  1 vibol vibol         18 Dec  8 16:13 monkey.txt
+
+
+2- change group permission 
+
+>> chown :groupname file
+
+
+check the group existing:
+
+>> vibol@khcam:~$ groups
+vibol adm cdrom sudo dip plugdev users lpadmin docker
+
+Ex: change group 
+
+-rw-rw-r--  1 vibol vibol         18 Dec  8 16:13 monkey.txt
+
+
+>>chown :adm monkey.txt
+
+-rw-rw-r--  1 vibol adm           18 Dec  8 16:13 monkey.txt
+
+
+3- change both user:group 
+
+>> chown vibol:adm monkey.txt
+
+-rw-rw-r--  1 vibol vibol         18 Dec  8 16:13 monkey.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

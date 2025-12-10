@@ -115,6 +115,11 @@ And now it seems to me the beautiful uncut hair of graves.
 
 vibol>>grep "[aeiou]{2,3}" SongOfMyself.txt -E
 
+Missing me one place search another,
+I stop somewhere waiting for you.
+
+
+
 
 
 
