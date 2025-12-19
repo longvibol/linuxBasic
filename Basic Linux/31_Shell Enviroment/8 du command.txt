@@ -1,0 +1,13 @@
+>> du -h : check desk use 
+
+1.7M	./run/udev
+du: cannot read directory './run/initramfs': Permission denied
+0	./run/initramfs
+5.6M	./run
+88G	.
+
+
+or 
+
+>>> vibol@khcam:~$ du -hs
+29G

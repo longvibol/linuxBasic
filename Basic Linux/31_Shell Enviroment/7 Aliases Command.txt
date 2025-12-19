@@ -1,0 +1,128 @@
+1- Customize the command with our Aliases 
+
+vibol@khcam:~$ alias pig="echo OINKKKK"
+vibol@khcam:~$ pig
+OINKKKK
+
+
+>> check the type :
+
+vibol@khcam:~$ type cd
+cd is a shell builtin
+vibol@khcam:~$ type touch
+touch is /usr/bin/touch
+vibol@khcam:~$ type pig
+pig is aliased to `echo OINKKKK'
+
+2- ll command is the aliase in the default 
+
+vibol@khcam:~$ type ll
+ll is aliased to `ls -alF'
+
+
+3-command : l also the alias  
+
+vibol@khcam:~$ type l
+l is aliased to `ls -CF'
+vibol@khcam:~$ l
+Desktop/            monkey.txt   Public/                  snap/
+Documents/          Music/       pycharm-2025.2.4/        Templates/
+Downloads/          myenv/       pycharm-2025.2.4.tar.gz  Videos/
+eclipse-workspace/  myproject/   PycharmProjects/
+expension/          openvpn-ca/  sambashare/
+grep/               Pictures/    secretStuff/
+
+
+4- Custom alias 
+
+>> vibol@khcam:/$ alias ..="cd .."
+
+------------------------------------
+
+vibol@khcam:/$ type ..
+.. is aliased to `cd ..'
+
+Noted after we close the terminal it will remove the alias 
+
+
+==> We need to put the alias in the place where they are not change 
+
+>>  nano ~/.bashrc
+
+Predefine Alias :
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+Therefor, we can setup the command inside 
+
+
+# custom alias
+
+alias ..="cd .."
+alias du="du -h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
