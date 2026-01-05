@@ -1,0 +1,91 @@
+1- Count the match work 
+
+>> grep "myself" SongOfMyself.txt -ic
+>> 47
+
+2- find the line before or after A or B:
+
+>> Before 
+
+vibol@khcam:~/Desktop/grep$ grep "grass" SongOfMyself.txt -iB1
+I loafe and invite my soul,
+I lean and loafe at my ease observing a spear of summer grass.
+
+
+>> After
+
+vibol@khcam:~/Desktop/grep$ grep "grass" SongOfMyself.txt -iA1
+I lean and loafe at my ease observing a spear of summer grass.
+
+--
+Loafe with me on the grass, loose the stop from your throat,
+Not words, not music or rhyme I want, not custom or lecture, not even the best,
+
+
+3- A1 -B1
+
+vibol@khcam:~/Desktop/grep$ grep "wagon" SongOfMyself.txt -A1 -B1
+The big doors of the country barn stand open and ready,
+The dried grass of the harvest-time loads the slow-drawn wagon,
+The clear light plays on the brown gray and green intertinged,
+--
+
+
+4- -A1 -B1 = -C1
+
+vibol@khcam:~/Desktop/grep$ grep "wagon" SongOfMyself.txt -A1 -B1
+The big doors of the country barn stand open and ready,
+The dried grass of the harvest-time loads the slow-drawn wagon,
+The clear light plays on the brown gray and green intertinged,
+--
+
+
+5- Find line number :-n
+
+
+vibol@khcam:~/Desktop/grep$ grep "6" SongOfMyself.txt -wn
+131:6
+
+
+6- View that line number 
+
+>> vibol@khcam:~/Desktop/grep$ grep "6" SongOfMyself.txt -wnC1
+130-
+131:6
+132-A child said What is the grass? fetching it to me with full hands;
+
+
+Note 
+
+-C1n = it is not working because C need the input 
+
+==> -nC1
+
+
+7- first match 
+
+>>vibol@khcam:~/Desktop/grep$ grep "wagon" SongOfMyself.txt -m1
+The dried grass of the harvest-time loads the slow-drawn wagon,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

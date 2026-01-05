@@ -1,0 +1,16 @@
+we cacatidante multiple file then create input 
+
+> cat bees.txt ants.txt > inserts.txt 2> erro.txt 
+
+>> ls -l > output.txt 2> output.txt 
+
+= ls -l > output.txt 2>&1
+
+** special syntax ***
+
+&> 
+
+>> ls -l &> output.txt (this is no error)
+
+if it have error it will keep in the output.txt 
+

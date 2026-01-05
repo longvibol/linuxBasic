@@ -1,0 +1,68 @@
+User- Defined Actions 
+
+> find -exec command {};
+
+-exec : exactly  
+
+Ex: find the sub listing 
+
+find ~ -type f -empty -exec ls -l '{}' ';'
+
+
+
+* find then deleted 
+
+>> find -ok rm -r '{}' ';'
+
+ok mean object y to deleled 
+
+
+EX: find empty folder then deleted 
+
+>> find -empty -ok rm -r '{}' ';'
+
+
+---------------------------------
+
+Find the file then copy it 
+
+Ex: 
+
+>> find -type f -name "*.txt" -exec cp '{}' '{}_copy' ';'
+vibol@khcam:~/Desktop/Redirection$ ls
+cat.txt       colorSort.txt       color.txt       erro.txt       fielFolder  hello.txt_copy  listAll.txt_copy
+cat.txt_copy  colorSort.txt_copy  color.txt_copy  erro.txt_copy  hello.txt   listAll.txt     output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

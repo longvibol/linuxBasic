@@ -9,3 +9,14 @@ Delete command :
 
 >> rmdir myfolder
 
+3- Set time zone 
+
+>> sudo timedatectl set-timezone Asia/Phnom_Penh
+
+4- shutdown pc 
+
+>> sudo shutdown now
+
+
+
+

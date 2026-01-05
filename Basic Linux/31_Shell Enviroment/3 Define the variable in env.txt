@@ -1,0 +1,63 @@
+1- shell variable define : (local virable or shell)
+
+vibol@khcam:~$ animal=sheep
+vibol@khcam:~$ echo $animal
+sheep
+
+
+2- environment (global variable) 
+
+vibol@khcam:~$ export animal=sheep
+vibol@khcam:~$ echo $animal
+sheep
+
+
+if we print : printenv 
+
+>>>vibol@khcam:~$ printenv | grep animal
+animal=sheep
+
+
+3- defiale string " " 
+
+vibol@khcam:~$ name="hello long"
+vibol@khcam:~$ echo $name
+hello long
+
+
+4- change variable 
+
+vibol@khcam:~$ bash 
+vibol@khcam:~$ name_me="long vibol"
+vibol@khcam:~$ echo $name_me
+long vibol
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

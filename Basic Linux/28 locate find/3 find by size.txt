@@ -1,0 +1,35 @@
+* find by size 
+
+> find -size +1G
+
+
+>> find ~ -size +1G
+/home/vibol/Downloads/pycharm-2025.1.3.1.tar.gz
+
+* find by owner 
+
+drwxrwxr-x  3 vibol vibol       4096 May  5 10:18  apache-maven-3.9.9-bin
+
+> find -user hermione 
+
+>> find ~ -user vibol
+
+* find emptly folder 
+
+>> find -empty 
+
+>> find ~/Desktop/Redirection/ -empty -type d
+/home/vibol/Desktop/Redirection/fielFolder
+
+
+EX: find all .txt files owned by a specific user:
+
+vibol@khcam:~/Desktop/Redirection$ find . -name "*.txt" -user vibol
+./colorSort.txt
+./fielFolder/cal.txt
+./listAll.txt
+./hello.txt
+./cat.txt
+./color.txt
+./erro.txt
+

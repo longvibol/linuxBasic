@@ -1,0 +1,27 @@
+* tac : is the revers printing 
+
+>>tac hello.txt 
+
+- text
+- book 
+- name
+
+================
+Hello File
+
+
+>> tac hello.txt color.txt : it combine together than revers 
+
+
+* rev : revers the text 
+
+>> rev hello.txt 
+
+eliF olleH
+================
+
+eman -
+ koob -
+txet -
+
+

@@ -1,0 +1,184 @@
+1. Clear screen 
+
+>> Ctrl + l
+
+2- Jump command 
+
+>> Ctrl + a ( come to first line of the command )
+
+>> Ctrl + e ( come to the end of the line )
+
+Example:
+
+vibol@khcam:~$ shdrej toch one ew werwer werwer ferhererj
+
+
+3- Move Characters : easy when you don't want to move the hand from key board 
+
+>> Ctrl + f (move forward) 
+
+>> Ctrl + b (move backwards)
+
+
+4- Jump to the work 
+
+Alt + b (back word word)
+Alt + f (forward word)
+
+
+5- Swapping charater : Ctrl + t
+
+tow ==> Ctrl + t (to swap the charater ) 
+
+6-Swapping word : Alt + t
+
+>> touch one two ( Alt + t )
+
+
+7- Killing the line 
+
+>> Ctrl + k
+
+hello vibol (Ctrl + k) my name is hello 
+
+>> Alt + B : to work one works a time 
+
+>> Ctrl + u (to kill from current to the left) 
+
++ to kill only the word 
+
+>> alt+ d : hello (Alt+d) vibol (will kill delete vibol)
+
+
++ kill only the current chara 
+
+>> Ctrl + d 
+
++ kill the work and from the current to start 
+
+Ctrl + w 
+
+
+=========================================================================
+
++ Reviving text (Yanking)
+
+Ctrl + y ( redo)
+
++ To see the history of the command 
+
+>> history 
+
+
+  218  ifconfig
+  219  python3 mac_changer.py -i wlx0013eff62f45  -m aa:11:@2:33:44:55
+  220  python3 mac_changer.py -i wlx0013eff62f45  -m 00:11:@2:33:44:55
+  221  dir
+  222  reboot
+  223  sudo nano /etc/vsftpd.conf
+  224  sudo systemctl status vsfpd.service
+  225  sudo systemctl status vsftpd.service
+  226  sudo systemctl restart vsftpd
+  227  sudo systemctl status vsftpd.service
+
+
++ history | less 
+
+to check one by one line 
+
++ History Expansion : re-run an earlier command if we have its line number form the history 
+
+Syntax : 
+
+history:  218  ifconfig
+
+>> !218
+
+** search the history ** 
+
+>> Ctrl + r : search the command you want to search 
+
+(failed reverse-i-search)`': ifconfig
+
+
++ the history store in the Destop user 
+
+>> cd / 
+
+>> ls -a 
+
+>> nano .bash_history 
+
+vibol@khcam:/$ ls -a
+.    bin.usr-is-merged  debug  home   lib.usr-is-merged  mnt   root  sbin.usr-is-merged  swap.img  usr
+..   boot               dev    lib    lost+found         opt   run   snap                sys       var
+bin  cdrom              etc    lib64  media              proc  sbin  srv                 tmp
+
+
++ check history size 
+
+vibol@khcam:/$ echo $HISTFILESIZE
+2000
+vibol@khcam:/$ echo $HISTSIZE
+1000
+
+>>history -c (to remove all the store command)
+
+ 
+
+--------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

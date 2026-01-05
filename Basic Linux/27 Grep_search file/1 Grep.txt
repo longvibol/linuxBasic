@@ -1,0 +1,71 @@
+the grep command searchs for patterns in each file's contents. 
+
+Syntax: >> grep PATTERN FILE
+
+Ex: grep "chicken" animals.txt
+
+- grep is case sensitive 
+
+>> grep "team" MS_LIG\ Nov\ 2025.txt -I
+
+1- search -w = matching word :
+
+vibol@khcam:~/Desktop$ grep -w  "MOI" MS_LIG\ Nov\ 2025.txt
+	- MOI need to reduce and support team 
+	- Suppor team and MOI team
+	- Support Team and MOI 
+
+
+2- Search -r recluston អោយតាមានយកមកទាំងអស់
+
+>> grep -ri "clarain"
+MS_LIG Nov 2025.txt:7- Target Reactivation Issue: From Clarain not synchrony to StarGate 
+
+
+3- find similar word : hello but we confue to write hallow 
+>> grep -ri "h[ea]llo]
+
+vibol@khcam:~/Desktop/Redirection$ grep -ri "h[ea]llo"
+cat.txt_copy:hello my name is vibol
+cat.txt_copy:mylove hello
+hello.txt_copy:hello my name is vibol
+hello.txt_copy:mylove hello
+fielFolder/cal.txt_copy:hello my name is vibol
+fielFolder/cal.txt_copy:mylove hello
+fielFolder/cal.txt:hello my name is vibol
+fielFolder/cal.txt:mylove hello
+listAll.txt:hallo
+listAll.txt_copy:hello
+hello.txt:hello my name is vibol
+hello.txt:mylove hello
+cat.txt:hello my name is vibol
+cat.txt:mylove hello
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+chmod = change mode 
+
+- chmod = change permission 
+
+syntax: 
+
+>> chmod mode file
+
+
+- u = user
+- g = group
+- o = others
+- a = all 
+
+- sing " - " remove permission 
+- sing " + " add permission 
+
+>> chmod a=rwx filename
+
+
+Example:
+
+
+vibol@khcam:~/Desktop$ chmod g-r MS_LIG\ Nov\ 2025.txt 
+vibol@khcam:~/Desktop$ ls -l | grep MS_LIG\ Nov\ 2025.txt 
+-rwx---r--  1 vibol vibol      1410 Nov 19 08:58 MS_LIG Nov 2025.txt
+vibol@khcam:~/Desktop$ chmod o=r MS_LIG\ Nov\ 2025.txt 
+vibol@khcam:~/Desktop$ ls -l | grep MS_LIG\ Nov\ 2025.txt 
+-rwx---r--  1 vibol vibol      1410 Nov 19 08:58 MS_LIG Nov 2025.txt
+vibol@khcam:~/Desktop$ chmod o-r MS_LIG\ Nov\ 2025.txt 
+vibol@khcam:~/Desktop$ ls -l | grep MS_LIG\ Nov\ 2025.txt 
+-rwx------  1 vibol vibol      1410 Nov 19 08:58 MS_LIG Nov 2025.txt
+vibol@khcam:~/Desktop$ chmod o+rwx MS_LIG\ Nov\ 2025.txt 
+vibol@khcam:~/Desktop$ ls -l | grep MS_LIG\ Nov\ 2025.txt 
+-rwx---rwx  1 vibol vibol      1410 Nov 19 08:58 MS_LIG Nov 2025.txt
+vibol@khcam:~/Desktop$ chmod a+rwx MS_LIG\ Nov\ 2025.txt 
+vibol@khcam:~/Desktop$ ls -l | grep MS_LIG\ Nov\ 2025.txt 
+-rwxrwxrwx  1 vibol vibol      1410 Nov 19 08:58 MS_LIG Nov 2025.txt

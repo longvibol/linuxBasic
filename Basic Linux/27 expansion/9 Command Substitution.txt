@@ -1,0 +1,28 @@
+$(command) or `command` (it called `` backtext) 
+
+syntax to display the output of another command. 
+
+
+
+- Mostly we use for the shell scrip running 
+
+
+
+>> echo hello, today is $(date) > test.txt
+vibol@khcam:~/Desktop/vibol$ ls
+test.txt
+vibol@khcam:~/Desktop/vibol$ cat test.txt 
+hello, today is Mon Oct 27 02:53:31 PM +07 2025
+
+
+Ex:1
+
+>> echo my root is $(whoami)
+my root is vibol
+
+
+Ex2:  
+
+>> echo today is `date`
+
+

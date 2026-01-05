@@ -1,0 +1,243 @@
+1. echo : print text 
+
+>> echo > text.tx
+
+2. path name expansion (*)
+we put * to declare the file inside the folder 
+
+
+>>echo price * to run the command
+price phone.txt tech.txt to run the command
+
+similar name called: 
+
+- asterisk 
+- wildcard character or aka globbing patterns 
+
+
+* = anything else 
+
+Ex1: 
+
+>> ls *.html 
+
+>> cat blue*
+
+Ex2 :
+
+>> echo *.txt
+phone.txt tech.txt
+
+
+ex3: want to find the sentence or word that start with letter p 
+
+>> echo p*
+
+phone.txt
+
+note this is cash sensitive: p is difference from P 
+
+>> touch pho.txt phat.js cat.js
+
+Ex:
+
+vibol@khcam:~/Desktop/expension$ echo P*
+P*
+vibol@khcam:~/Desktop/expension$ echo p*
+phat.js phone.txt pho.txt
+
+---------------------------------------
+
+
+Ex4: 
+
+>> ls -l *.txt
+-rw-rw-r-- 1 vibol vibol 13 Oct 27 10:28 phone.txt
+-rw-rw-r-- 1 vibol vibol  0 Oct 27 10:35 pho.txt
+-rw-rw-r-- 1 vibol vibol  6 Oct 27 10:24 tech.txt
+vibol@khcam:~/Desktop/expension$ ls
+cat.js  phat.js  phone.txt  pho.txt  tech.txt
+vibol@khcam:~/Desktop/expension$ ls -l cat.js phat.js phone.txt pho.txt tech.txt 
+-rw-rw-r-- 1 vibol vibol  0 Oct 27 10:35 cat.js
+-rw-rw-r-- 1 vibol vibol  0 Oct 27 10:35 phat.js
+-rw-rw-r-- 1 vibol vibol 13 Oct 27 10:28 phone.txt
+-rw-rw-r-- 1 vibol vibol  0 Oct 27 10:35 pho.txt
+-rw-rw-r-- 1 vibol vibol  6 Oct 27 10:24 tech.txt
+
+
+---------------------------------------------
+
+combine together 
+
+>> cat *.txt 
+
+phone number
+hello
+
+--------------------------------------------
+
+រកចន្លោះ អីក៏ដោយអោយតាមានពាក្យ នៅកណ្តាល at : *at*
+
+>> ls
+cat.js  phat.js  phone.txt  pho.txt  tech.txt
+vibol@khcam:~/Desktop/expension$ touch data.txt
+vibol@khcam:~/Desktop/expension$ ls -l *at*
+-rw-rw-r-- 1 vibol vibol 0 Oct 27 10:35 cat.js
+-rw-rw-r-- 1 vibol vibol 0 Oct 27 11:05 data.txt
+-rw-rw-r-- 1 vibol vibol 0 Oct 27 10:35 phat.js
+
+
+or 
+
+echo *at* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

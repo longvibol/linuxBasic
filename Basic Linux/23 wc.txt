@@ -1,0 +1,13 @@
+wc : word count 
+
+>> wc color.txt 
+
+10  8 51 color.txt
+
+Explain:
+
+- 10 - is the number of line :l
+- 8 is the number of word :w
+- 51 is the number of byte :c (character is the byte) 
+
+>> wc -lw color.txt

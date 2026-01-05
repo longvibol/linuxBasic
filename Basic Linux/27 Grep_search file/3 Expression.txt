@@ -1,0 +1,156 @@
+Regex Crash:
+
+1- find the charator: "." using dot
+
+>> grep "p...." SongOfMyself.txt -wC1
+= find the letter start with p and have 4 char
+
+2- find the begging of the line "^"
+
+>>vibol@khcam:~/Desktop/grep$ grep "^I" SongOfMyself.txt -w
+I celebrate myself, and sing myself,
+I loafe and invite my soul,
+
+
+3- Matach the end of the line "$"
+
+>> vibol@khcam:~/Desktop/grep$ grep ")$" SongOfMyself.txt -w
+You shall possess the good of the earth and sun, (there are millions of suns left,)
+
+
+4- Find rang []
+
+>> 
+
+vibol@khcam:~/Desktop/grep$ grep "2" SongOfMyself.txt 
+2
+12
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+32
+42
+52
+
+but I want only from 2 to 6 
+
+>> vibol@khcam:~/Desktop/grep$ grep "2[1-6]" SongOfMyself.txt 
+21
+22
+23
+24
+25
+26
+
+-----------------------
+
+ហើយយើងចង់មើលតែ 8 បន្ទាប់ទេ
+
+
+vibol@khcam:~/Desktop/grep$ grep "2[1-6]" SongOfMyself.txt -A8
+21
+I am the poet of the Body and I am the poet of the Soul,
+The pleasures of heaven are with me and the pains of hell are with me,
+The first I graft and increase upon myself, the latter I translate into a new tongue.
+
+I am the poet of the woman the same as the man,
+And I say it is as great to be a woman as to be a man,
+And I say there is nothing greater than the mother of men.
+
+--
+22
+You sea! I resign myself to you also—I guess what you mean,
+I behold from the beach your crooked inviting fingers,
+I believe you refuse to go back without feeling of me,
+We must have a turn together, I undress, hurry me out of sight of the land,
+Cushion me soft, rock me in billowy drowse,
+Dash me with amorous wet, I can repay you.
+
+Sea of stretch’d ground-swells,
+
+
+--------------------------
+
+ចង់មើលផ្ទូយពី Rang neng ប្រើ ^
+
+>>vibol@khcam:~/Desktop/grep$ grep "2[^1-6]" SongOfMyself.txt
+20
+27
+28
+29
+
+------------------
+
+5- option fine with ?
+
+>> vibol@khcam:~/Desktop/grep$ grep "bird" -w SongOfMyself.txt 
+Where the mocking-bird sounds his delicious gurgles, cackles, screams, weeps,
+Where the humming-bird shimmers, where the neck of the long-lived swan is curving and winding,
+
+
+this command is not working: 
+
+vibol@khcam:~/Desktop/grep$ grep "birds?" -w SongOfMyself.txt 
+
+We need to use regular expression 
+
+>> vibol@khcam:~/Desktop/grep$ grep "birds?" -wE SongOfMyself.txt 
+I hear bravuras of birds, bustle of growing wheat, gossip of flames, clack of sticks cooking my meals,
+
+
+6- in the roll find a{3} = aaa (it mean next to each other)
+
+>>vibol@khcam:~/Desktop/grep$ grep "[aeiou]{3}" SongOfMyself.txt -E
+Looking with side-curved head curious what will come next,
+And now it seems to me the beautiful uncut hair of graves.
+
+7- roll in rang {2-3}
+
+vibol>>grep "[aeiou]{2,3}" SongOfMyself.txt -E
+
+Missing me one place search another,
+I stop somewhere waiting for you.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

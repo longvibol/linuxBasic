@@ -1,0 +1,24 @@
+1-Create group 
+
+>> groups movieClub
+
+2- add user to group 
+
+>> adduser vibol movieClub 
+>> adduser braly movieClub
+
+
+3- share file from the root 
+
+>> cd / 
+
+>> mkdir shared 
+
+- Change group 
+
+>> chown :movieClub shared 
+
+Therefor they can access to that group : 
+
+
+

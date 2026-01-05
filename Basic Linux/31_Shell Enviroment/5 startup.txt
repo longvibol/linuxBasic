@@ -1,0 +1,77 @@
+Startup files:
+
+1- check the global config for all users :
+
+>> less /etc/bash.bashrc (where we change the it will show all the user) 
+
+or 
+
+vibol@khcam:~$ ls -l /etc/bash.bashrc 
+-rw-r--r-- 1 root root 2319 Mar 31  2024 /etc/bash.bashrc
+
+
+2- specific setting for each user. 
+
+~/.bashrc (apply for one user a time)
+
+>> ls -a 
+
+vibol@khcam:~$ ls -a
+.                   expension   .profile
+..                  .gitconfig  Public
+.apport-ignore.xml  .gnome      .putty
+.aspell.en.prepl    .gnupg      pycharm-2025.2.4
+.aspell.en.pws      grep        pycharm-2025.2.4.tar.gz
+.bash_history       .java       PycharmProjects
+.bash_logout        .lesshst    sambashare
+.bashrc             .local      secretStuff
+.cache              .m2         snap
+.config             monkey.txt  .ssh
+Desktop             Music       .sudo_as_admin_successful
+.docker             myenv       .swt
+Documents           myproject   Templates
+.dotnet             openvpn-ca  Videos
+Downloads           .p2         .viminfo
+.eclipse            Pictures    .vscode
+eclipse-workspace   .pki        .zoom
+
+
+>> less .bashr
+
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
+
+this is the command 
+
+- try to edit it 
+- first need to backup 
+
+1- run the file after edit 
+>> nano .bashrc
+>> source .bashrc 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

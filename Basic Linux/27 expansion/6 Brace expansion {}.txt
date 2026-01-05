@@ -1,0 +1,156 @@
+1-item 
+
+{} Brace Expansion = Generate the multiple strings for us based on a pattern. 
+
+>> touch page{1,2,3}.txt 
+
+
+Ex:
+
+echo {Mon,Tue,Wed,Thu,Fri}_Planner.txt
+
+2-rang {..}
+
+>> echo journal{1..364}
+
+journal290 journal291 journal292 journal293 journal294 journal295 journal296 journal297 journal298 journal299 journal300 journal301 journal302 journal303 journal304 journal305 journal306 journal307 journal308 journal309 journal310 journal311 journal312 journal313 journal314 journal315 journal316 journal317 journal318 journal319 journal320 journal321 journal322 journal323 journal324 journal325 journal326 journal327 journal328 journal329 journal330 journal331 journal332 journal333 journal334 journal335 journal336 journal3
+
+
+3- rang interval {2..10..2}
+
+>> echo {2..10..3}
+2 5 8
+
+4- Generate from rang {a..e}
+
+>> echo {a..e}
+a b c d e
+
+
+5- Generate from rang 
+
+>> echo {Z..A}
+
+>> echo {Z..A}
+Z Y X W V U T S R Q P O N M L K J I H G F E D C B A
+
+
+6- create sub folder 
+
+បង្កើត folder ដែលមាន folder ក្នុងនឹងទៀត
+
+>> mkdir -p {Mon,Tue,Wed,Thu,Fri,Sat,Sun}/{Brakfast,lunch,dinnder}
+vibol@khcam:~/Desktop/expension$ ls Mon/
+Brakfast  dinnder  lunch
+
+==> will will create Mon that have three folder inside 
+
+
+7- Nested Brace Expansion 
+
+>> echo {x,y{1..5},z} 
+
+x, y1,y2,y3,y4,y5,z
+
+
+>> echo {x,y{1..5}{AM,PM},z}
+
+
+x y1AM y1PM y2AM y2PM y3AM y3PM y4AM y4PM y5AM y5PM z
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

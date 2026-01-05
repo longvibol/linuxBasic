@@ -1,0 +1,83 @@
+#!/bin/bash 
+
+We can change bash to run another programing language 
+
+- in the ubuntu in preinstall the python3 
+
+>> which python3 
+
+/usr/bin/python3
+
+>> nano pyhi 
+
+print("Hello there from Python")
+
+>> chmod +x pyhi 
+
+Run the python in bash
+
+>> python3 pyhi 
+
+Hello there from Python
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+Parameter Expansion is $ sing : the it looking for 
+
+braly@khcam:/home/vibol$ echo $((2+2))
+4
+braly@khcam:/home/vibol$ echo $USER
+braly
+
+
+1- print current directory :@PWD
+
+>> braly@khcam:/home/vibol$ echo $PWD
+/home/vibol
+
+
+or if we cd to another location 
+
+>> vibol@khcam:~$ echo $PWD
+/home/vibol
+vibol@khcam:~$ cd ~/Desktop/
+vibol@khcam:~/Desktop$ echo $PWD
+/home/vibol/Desktop
+
+
+2- show prevouse location : echo $OLDPWD
+
+vibol@khcam:~/Desktop/PythonH$ echo $OLDPWD
+/home/vibol/Desktop

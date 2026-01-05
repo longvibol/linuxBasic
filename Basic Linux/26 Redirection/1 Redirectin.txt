@@ -1,0 +1,104 @@
+Standard streams are communication channels between computer program and its environment 
+
+- Standard input 
+- Standard output
+- Standard Error 
+
+យើងអាចកំនត់វាបាន តើយើងចង់អោយវាបង្ហាញនៅកន្លែងណា save to the file or to the printer or other computer 
+
+- Standard out put (>)
+syntax : command > filename 
+
+
+Ex:
+
+>> date :
+Thu Oct 23 11:41:43 +07 2025
+
+
+Redirection :
+
+>> date >> text.txt 
+
+Ex:2
+
+/user/bin (contain exe file ) 
+
+first go to the folder our own then we can redirect and create the file! 
+
+>> ls -l /usr/bin/ > list.txt
+
+
+>> ls -la /usr/bin > list.txt
+>> sort -n5k list.txt  > list1.txt 
+
+
+>> sort -nk5 list.txt  > list1.txt 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

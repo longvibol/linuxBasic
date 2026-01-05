@@ -1,0 +1,102 @@
+1. Basic Steps 
+
+>> nano hi : to create bash scrip 
+
+- first we need to put the sign : #!/bin/bash 
+
+#!/bin/bash
+
+#This is my first script!
+
+echo "Hello there, $USER"
+echo "Today is $(date)"
+echo "last ran hi at $(date)" >> hi.log
+
+
+>> bash hi 
+
+vibol@khcam:~$ bash hi
+Hello there, vibol
+Today is Mon Dec 22 10:55:10 AM +07 2025
+
+
+---------------------------
+
+Check the log file what it was created : 
+
+>> cat hi.log
+
+last ran hi at : this is when the code is wrong 
+last ran hi at : this is when the code is wrong 
+last ran hi at : this is when the code is wrong 
+
+last ran hi at Mon Dec 22 10:52:56 AM +07 2025
+last ran hi at Mon Dec 22 10:55:10 AM +07 2025
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

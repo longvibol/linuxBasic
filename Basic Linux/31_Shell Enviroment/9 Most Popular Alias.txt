@@ -1,0 +1,108 @@
+Link to the website:
+
+https://www.digitalocean.com/community/questions/what-are-your-favorite-bash-aliases
+
+
+Ex: 
+
+alias ..="cd .."
+alias du="du -h"
+alias mv="mv -v"
+alias rm="rm -vi"
+alias cp="cp -v"
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+
+-------------------------------
+
+Move the alias to another directory 
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+
+>> Create new directory in the home directory 
+
+>> nano .bash_aliases
+
+Then pasth the text to that directory 
+
+-------------------------------------------------------
+
+# custom alias
+
+alias ..="cd .."
+alias du="du -h"
+alias mv="mv -v"
+alias rm="rm -vi"
+alias cp="cp -v"
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+
+
+-------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

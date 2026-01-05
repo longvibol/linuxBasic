@@ -1,0 +1,15 @@
+1. Crate Login folder to admin 
+
+>> sudo apt install nautilus-admin
+
+==>After install finish 
+
+>> sudu apt update 
+
+==> Restart the pc 
+
+Go to the folder that you wan to login then right click login as Administrator 
+
+YouTube Link:
+
+https://www.youtube.com/watch?v=fLiao4A8nsI

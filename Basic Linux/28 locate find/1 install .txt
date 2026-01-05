@@ -1,0 +1,29 @@
+- locate command use to find the file and it query from the database that register. 
+
+>> sudo apt install plocate
+
+Ex
+
+>> locate /bin/less
+>> locate /bin/less?? 
+
+- use -I to engore case 
+
+>> locate Planner -I 
+
+- use --l = to limit the output 
+
+>> locate Planner -il10
+
+-- use -e : mean exiting 
+
+>> locate Mon -iel10 (e for checking existing) 
+
+>> updatedb ដើម្បីធ្វើការ update database before we search 
+
+
+
+
+
+
+

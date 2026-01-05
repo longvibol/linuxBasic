@@ -1,0 +1,233 @@
+Create backup with the name and time with cronetab -e
+
+>> date +%d
+give the day:  26
+
+>> date +%y
+give the year : 25
+
+
+==> What we want : day month year
+
+>> vibol@khcam:~$ date +%d-%m-%y
+26-12-25
+
+
+1. create backup directory to store the file backup 
+
+>> mkdir backups (in home directory)
+
+
+1-1 write the bash scrip : the we can run anywhere from bash :
+
+>> nano my-backups
+                            
+#!/bin/bash 
+
+DATE=$(date +%m-%d-%Y)
+
+echo $DATE
+
+
+==> run testing 
+
+>> bash my-backup
+
+>> vibol@khcam:~/bin$ bash my-backup 
+12-26-2025
+
+
+whole code : 
+
+---------------------------------------
+                                
+#!/bin/bash 
+
+DATE=$(date +%m-%d-%Y)
+BACKUP_DIR="/home/vibol/backups"
+
+tar -cvzf $BACKUP_DIR/backup-$DATE.tar.gz /home/vibol/Desktop/TarMe
+
+----------------------------------------
+
+2-run the command for testing 
+
+>> my-backup 
+
+>> vibol@khcam:~/backups$ dir
+backup-12-26-2025.tar.gz
+
+3- Create backup in crontab -e 
+
+
+* * * * * /home/vibol/bin/my-backup
+
+=============
+
+4- Check the result 
+
+vibol@khcam:~/bin$ crontab -e
+
+crontab: installing new crontab
+
+vibol@khcam:~/bin$ cd ~/backups/
+
+vibol@khcam:~/backups$ dir
+
+
+backup-12-26-2025-43.tar.gz  backup-12-26-2025.tar.gz
+backup-12-26-2025-47.tar.gz
+
+
+==> create backup file every 3pm every day 
+
+>> 0 3 * * *  /home/vibol/bin/my-backup
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

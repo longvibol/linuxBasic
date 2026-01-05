@@ -1,0 +1,17 @@
+>> ps 
+
+vibol@khcam:~/Desktop/grep$ ps
+    PID TTY          TIME CMD
+   4416 pts/0    00:00:00 bash
+   4953 pts/0    00:00:00 ps
+
+
+>> ps -aux : show all the processing in the system 
+
+vibol@khcam:~/Desktop/grep$ ps -aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.0  24756 15236 ?        Ss   13:21   0:04 /sbin/init sp
+root           2  0.0  0.0      0     0 ?        S    13:21   0:00 [kthreadd]
+
+
+-----------------------------------------------------------

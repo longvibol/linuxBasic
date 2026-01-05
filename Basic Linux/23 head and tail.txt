@@ -1,0 +1,114 @@
+* head : print from start 10 line by default 
+
+>> head test 
+
+vibol@khcam:~/Desktop$ head test 
+Afghanistan
+Albania
+Algeria
+Andorra
+Angola
+Antigua & Deps
+Argentina
+Armenia
+Australia
+Austria
+
+* tail : print from end 10 line by default 
+
+tail test 
+United States
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Yemen
+Zambia
+Zimbabwe
+
+----------------------------
+** custom print line **: 
+
+>> head -n 20 test : print 20 line from start 
+or >> head -3 test : print 3 line 
+
+
+===================================
+
+
+print byte of the charater 
+
+>> head -c 8 test 
+
+>> tail -f test : print and follow : we use it when for monitor the log file that update all the time 
+
+or tail -n 20 -f test (this is very importance)
+
+
+Ex:
+
+>> vibol@khcam:/var/log$ tail -f syslog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

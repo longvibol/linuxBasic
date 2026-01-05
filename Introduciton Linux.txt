@@ -1,0 +1,25 @@
+-Kernel : is a computer program that forms the core of an operation system and manage critical tasks like:
+1. memory management 
+2. task scheduling 
+3. managing hardware
+
+- shell is a computer interface to an operation system (where the user typing the command and shell is the 
+translator to the operation system) 
+
+or 
+
+a shell is a command-line interface that allows users to interact with the operating system by executing commands. It acts as an interpreter that processes user inputs, runs programs, and manages system resources.
+
+
+---------------------------
+
+Order :
+1-Kernel -> 2-Shell -> 3-Applications 
+
+
+- Terminal is a program that runs a shell. 
+
+
+===================================================
+
+There are many kind of shell : Bash, sh, Zsh, Fish, Tcsh, Ksh, Dash 

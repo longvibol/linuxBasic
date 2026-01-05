@@ -1,0 +1,30 @@
+>> nano weather 
+
+#!/bin/bash
+
+case $1 in 
+-h | --help)
+        echo "Welcome to weather help"
+        ;;
+-3) 
+        echo "You provide -3"
+        ;;
+*)
+        echo "Any other value"
+        ;;
+esac 
+
+
+#curl "wttr.in/$1?m$2"
+
+
+Called it!
+
+>> vibol@khcam:~/bin$ weather -h
+Welcome to weather help
+
+>> vibol@khcam:~/bin$ weather -3
+You provide -3
+
+>>vibol@khcam:~/bin$ weather -
+Any other value

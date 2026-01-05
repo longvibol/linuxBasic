@@ -1,0 +1,240 @@
+1- File owner 
+
+drwxrwxr-x  6 vibol vibol      4096 Nov 19 09:59  Djando
+
+
+Explain 
+
+1- vibol : is the owner (file owner)
+2- vibol : group owner 
+3- drwxrwxr-x : this is 10 digit call file attribute : 
+
++ 1 digit : file type 
+	- regular file (normal file that have extension) 
+	d directory 
+	c character special file (mostly connected to the hardware) 
+	I symbolic link (Inline commands)
+		Ex: echo "Today is $(date)"
+	b block special file (most of them refer to the hardware file) 
+
++ digit from 2 to 4 : rwx (refer the owner permission) 
+
+Ex:
+
+drwxr-xr-x 2 braly braly 4096 Dec  8 15:12 Desktop
+
++ digit from : r-x (refer to the group owner)
+
++ the remain last 3 digit : refer to  (any one else or everyone)
+
+ex: r-x
+
+-------------------------------------------------------------------------
+
+Explain :
+
+- r: Read 
+- w: Write 
+- 
+
+---------------------------
+
++ digit 2: r or - ( read permission or not it will use - )
+
+--------------------------------------------------------------------------
+
+>> mkdir secretStuff 
+
+>> ls -l 
+
+drwxrwxr-x  2 vibol vibol       4096 Dec  8 15:50 secretStuff
+
+
+---- Create file name topsecret.txt 
+
+>> vibol@khcam:~/secretStuff$ dir
+>> topsecret.txt
+vibol@khcam:~/secretStuff$ ls -l
+total 0
+-rw-rw-r-- 1 vibol vibol 0 Dec  8 15:52 topsecret.txt
+
+
+==> change permission command : 
+
+>> chmod 604 topsecret.txt
+
+>> ls -l 
+>> -rw-r----- 1 vibol vibol 0 Dec  8 15:52 topsecret.txt
+
+Ex: testing read file from braly user 
+
+>> su braly -rw-r----- 1 vibol 
+
+vibol 31 Dec  8 16:00 topsecret.txt
+>> braly@khcam:/home/vibol/secretStuff$ cat topsecret.txt 
+>> cat: topsecret.txt: Permission denied
+
+
+==============================================================================================
+
+
++ w or - : write permission (can not modify) 
+
+if it w : mean can write 
+and if it is - can not write 
+
+
+Ex:
+
+-rw-rw-r--  1 vibol vibol          0 Dec  8 16:11 monkey.txt
+
+យើងមិនអាចបង្កើត ឬ ធ្វើការផ្លាស់ប្តូរទៅក្នុង file or do somting in the folder or can not deleted it. 
+
+
+
+-------------------------------------
+
++ X or - ( excercute permission) can or can not run as the program
+
+==>Ditrictory: can cd to that director or can not cd to this directory 
+==> file : 
+
+Ex: 
+
+>> vibol@khcam:/bin$ ls -l | grep date -w
+
+-rwxr-xr-x 1 root root      109064 Jun 22 23:21 date
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
