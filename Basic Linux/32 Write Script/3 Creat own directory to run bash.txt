@@ -1,0 +1,145 @@
+1- Crate in the home directory : home ~
+
+>> pwd
+//home/vibol
+
+1.1 make the directory to store the bash script 
+
+>> mkdir bin (bin = binary )
+
+>> mv hi bin/
+
+>> cd bin => ls > hi 
+
+our bash script in hi :
+
+1-2 check the PATH 
+
+vibol@khcam:~$ echo $PATH | grep vibol
+
+it still not see the path directory 
+
+* it depend on the Linux in Ubuntu we can check the profile first 
+
+>> less .profile
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+
+
+>> this the path we create : PATH="$HOME/bin:$PATH"
+
+------------------------------------
+
+>>> source .profile ( this command to update the path)
+
+
+>>>vibol@khcam:~$ echo $PATH | grep vibol
+/home/vibol/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+
+In case on other Linux we need to add this in the profile: 
+
+PATH="$HOME/bin:$PATH"
+
+1- go to 
+
+>>nano .bashrc
+
+
+this add this line to the last line: 
+
+>> PATH="$HOME/bin:$PATH"
+
+
+>> sourch .bashrc
+
+======================
+
+run the hi from the command line : it will need the permission 
+
+vibol@khcam:~$ hi
+bash: /home/vibol/bin/hi: Permission denied
+
+==> we change the permission 
+
+
+vibol@khcam:~$ cd bin/
+vibol@khcam:~/bin$ ls -l
+total 4
+-rw-rw-r-- 1 vibol vibol 130 Dec 22 11:20 hi
+vibol@khcam:~/bin$ chmod a+x hi
+vibol@khcam:~/bin$ ls -l
+total 4
+-rwxrwxr-x 1 vibol vibol 130 Dec 22 11:20 hi
+
+
+or 
+
+chmod +x hi ( it mean can excercute from everyone) 
+
+
+vibol@khcam:~/bin$ hi
+Hello there, vibol
+Today is Mon Dec 22 11:41:43 AM +07 2025
+
+
+
+>> which hi 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

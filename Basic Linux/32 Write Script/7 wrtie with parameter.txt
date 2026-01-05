@@ -1,0 +1,35 @@
+$ = is the parameter = posisional argument 
+
+Ex: our program name 
+
+>> weather fristP seconfP 
+
+- fristP is the $1
+- seconfP is the $2
+
+Example : weather 
+
+
+#!/bin/bash
+
+echo "first value is $1"
+echo "second value is $2"
+
+
+Called it : 
+
+>> vibol@khcam:~/bin$ weater vibol hi
+first value is vibol
+second value is hi
+
+==>
+
+
+  GNU nano 7.2                                                                                                                                                                 
+#!/bin/bash
+
+echo "first value is $1"
+echo "second value is $2"
+
+curl "wttr.in/$1?m$2"
+

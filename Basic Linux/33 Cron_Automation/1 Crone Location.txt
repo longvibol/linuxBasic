@@ -1,0 +1,108 @@
+1- Cron service allows us to schedule commands to run at reqular intervals like:
+
+- Every 30 minutes
+- Every day at midnight 
+- Every 1st of the month
+- Every December 15th 
+
+Syntax : >> crontab -e 
+
+a : minute 0-59
+b : Hour 0-23
+c : Day 1-31
+d : Month 1-12
+e : Day(of week) 0-6 (0 is Sunday and 1 is Monday)
+
++ Cron Characters 
+
+* : Any value 
+5,6 List of values ( 5 and 6 )
+1-4 Range of values ( 1 to 4 )
+*/5 : Step values (every 5) - every five min 
+
+
+Example :
+
+- 5 * * * * = every minute at 5min ==> if now is 4:24PM then at 17:05 is the setup time!
+
+https://crontab.guru/#0_0_1_5_* = “At 00:00 on day-of-month 1 in May.”
+
+>> crontab -e : edit with nano 
+
+# m h  dom mon dow   command
+  * *   *   *   *    echo "Another Minute! Date is: $(date)" >> ~/time.log
+  20 * * * * echo "it is 20 minute past the hour!" >> ~time.log
+
+==> it will write to the log file 
+
+vibol@khcam:~$ cat time.log 
+Another Minute! Date is: Tue Dec 23 04:29:01 PM +07 2025
+Another Minute! Date is: Tue Dec 23 04:30:01 PM +07 2025
+Another Minute! Date is: Tue Dec 23 04:31:01 PM +07 2025
+
+2- When have error on the command or what happen we need to setup the file 
+
+Standard error : 
+
+>>  * *   *   *   *    echerto "Another Minute! Date is: $(date)" >> ~/time.log 2>&1
+
+( 2>&1 = when it have error it will redirect to the same location) 
+
+
+>>   1-5 * * * * echo "dat is $(date)" >> ~/time.log : (run from 1 to 5 min then finishes)
+>> */1 * * * * echo "every 1 mine" >> ~/time.log : run every 1 minute 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

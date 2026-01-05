@@ -1,0 +1,25 @@
+TAR: create archive file
+
+Ex:
+
+>>mkdir TarMe
+>>touch TarMe/File{1..500}.txt 
+
+
+Using Tar: to create archive file 
+
+Syntax :
+
+-c : to create new file 
+-v : every file 
+-z : compress algorithem g Zip 
+-f : to create file name 
+
+>> tar -cvzf backup.tar.gz TarMe/ (create archive file with name backup with tar and using gzip : dircotry TarMe)  
+
+
+- How to unpack the backup file 
+
+>> tar -xzvf backup.tar.gz
+
+-------------------------------------------------------------------

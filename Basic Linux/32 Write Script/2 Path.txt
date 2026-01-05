@@ -1,0 +1,134 @@
+* Path : is the list of directory that the command looking and find the program when we tell it to run the program! 
+
+
+
+1- printenv
+
+>> vibol@khcam:~$ printenv | grep PATH
+
+TERMINATOR_DBUS_PATH=/net/tenshu/Terminator2
+WINDOWPATH=2
+QTWEBENGINE_DICTIONARIES_PATH=/usr/share/hunspell-bdic
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+
+or 
+
+>> echo $PATH
+
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+
+what it is : PATH is the list of directory 
+
+
+Example : ពេលដែលយើងប្រើ command ls it will looking for the directory of that command 
+
+>> which ls 
+
+/usr/bin/ls
+
+when we write in the command the Shell will looking in the directory and searching by the PATH:
+
+
+>> vibol@khcam:~$ ls /usr/bin/ | grep ls
+
+ls
+lsar
+lsattr
+lsblk
+lsb_release
+-----
+-----
+-----
+
+
+Ex: command "adduser"
+
+>>> vibol@khcam:~$ which adduser
+/usr/sbin/adduser
+
+==> what we want when we run "hi" bash command that we create and it will exercise anywhere we want 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
